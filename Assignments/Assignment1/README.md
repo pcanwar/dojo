@@ -43,7 +43,7 @@ source env/bin/activate
     """Append a new block to the chain, the block contains the index of the block, a hash of the last block, proof, and all unconfirmed transactions """
     def addBlcok(self):
 
-    // return a block (optional)
+    """ return a block (optional) """
     def getBlcok(self, index):
 
 Note that your code should be in the default files.
