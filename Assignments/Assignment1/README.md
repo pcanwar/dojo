@@ -6,7 +6,7 @@ In this project you need to modify functions to add transactions and blocks to c
 ### Installation
 
 Requires [python](https://python.org/) v3 to run.
-Install your favorite programming environment (eg, VSC, pycharm)
+Install your favorite programming environment (eg, VS Code, Pycharm)
 
 If you would like to install a virtual environment work:
 Create a directory to work with:
