@@ -22,7 +22,7 @@ class Blockchain:
 
     def proofOfWork(self):
 
-         """proof of work:
+        """proof of work:
         for adding the unconfirmed transactions,
         hashing the previous block and guessing a proof number """
 
