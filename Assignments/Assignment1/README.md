@@ -35,7 +35,7 @@ source env/bin/activate
     def lastChain(self):
 
     """Append a new transaction """
-    public boolean isOpen(int row, int col)
+    def addTransaction(self, receiver, sender, amount=0.90):
 
     """return True if chain is valid and proof of work is valided"""
     def verifyChain(cls, blockchain):
