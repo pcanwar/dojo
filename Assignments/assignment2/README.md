@@ -15,6 +15,12 @@ Each endpoint should handle any error that is out of bounds
     """Web API POST endpoint that allows to post a new transaction"""
     @app.route('/sendtx', methods=['POST'])
     def sendtx():
+    
+    {
+    "sender":"Any",
+    "receiver":"any",
+    "amount": 8
+    }
 
     """Web API GET endpoint request to unconfirmed transactions """
     @app.route('/opentxs', methods=['GET'])
