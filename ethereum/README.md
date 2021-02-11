@@ -1,4 +1,6 @@
 
+Install [Visual Studio Code](https://code.visualstudio.com)
+
 Install docker- so we can work on [Geth](https://github.com/ethereum/go-ethereum) 
 
 [https://docs.docker.com/desktop/](https://docs.docker.com/desktop/)
