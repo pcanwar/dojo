@@ -12,7 +12,7 @@ Metamask is a browser plugin that can be used to interact with any smart contrac
 
 ### Back-End Development
 * Install [Docker](https://docs.docker.com/desktop/).
-    Management of virtual infrastructure to run your applications or your preferred operating system. We need docker to be installed so we can work on [Geth](https://github.com/ethereum/go-ethereum) 
+    Management of virtual infrastructure to run your applications or your preferred operating system. We need docker so we can work on [Geth](https://github.com/ethereum/go-ethereum) 
 
 ### Platforms
 * Install [Nodejs](https://nodejs.org/en/).
