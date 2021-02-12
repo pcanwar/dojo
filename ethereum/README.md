@@ -2,7 +2,8 @@
 We need to install those packages before we start our 3rd week.
 
 ### Wallet Account
-* Install [Metamask](https://metamask.io/)
+* Install [Metamask](https://metamask.io/). 
+
 Metamask is a browser plugin that can be used to interact with any smart contract or create Ethereum transactions. It is easier to get started with.
 
 ### Code Editors: 
