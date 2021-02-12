@@ -17,7 +17,7 @@ Metamask is a browser plugin that can be used to interact with any smart contrac
 ### Platforms
 * Install [Nodejs](https://nodejs.org/en/)
 Node.js is a JavaScript runtime environment for executeing JavaScript code on the server side or terminal/ command-line tools. 
-After you install nodejs make sure ```npm``` package is installed as well. Type type ```npm -v``` on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux). Npm is a packaging tool that will allow you to install third party libraries such as web3. Node.js comes with virtual environment which is known as Node shell. 
+After you install nodejs make sure ```npm``` package is installed as well. To check if it is installed, type ```npm -v``` on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux). Npm is a packaging tool that will allow you to install third party libraries such as web3. Node.js comes with virtual environment which is known as Node shell. 
 A quick way to test simple Node.js/JavaScript code, type ```node``` on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux) 
 
 ### Library 
