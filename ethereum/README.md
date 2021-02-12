@@ -3,7 +3,6 @@ We need to install those packages before we start our 3rd week.
 
 ### Wallet Account
 * Install [Metamask](https://metamask.io/). 
-
 Metamask is a browser plugin that can be used to interact with any smart contract or create Ethereum transactions. It is easier to get started with.
 
 ### Code Editors: 
@@ -12,11 +11,11 @@ Metamask is a browser plugin that can be used to interact with any smart contrac
 * Install [Atom](https://atom.io/)
 
 ### Back-End Development
-* Install [Docker](https://docs.docker.com/desktop/)
+* Install [Docker](https://docs.docker.com/desktop/).
     Management of virtual infrastructure to run your applications or your preferred operating system. We need docker to be installed so we can work on [Geth](https://github.com/ethereum/go-ethereum) 
 
 ### Platforms
-* Install [Nodejs](https://nodejs.org/en/)
+* Install [Nodejs](https://nodejs.org/en/).
 Node.js is a JavaScript runtime environment for executeing JavaScript code on the server side or terminal/ command-line tools. 
 After you install nodejs make sure ```npm``` package is installed as well. To check if it is installed, type ```npm -v``` on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux). Npm is a packaging tool that will allow you to install third party libraries such as web3. Node.js comes with virtual environment which is known as Node shell. 
 A quick way to test simple Node.js/JavaScript code, type ```node``` on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux) 
