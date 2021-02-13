@@ -42,9 +42,11 @@ Step 3)
 
 Step 4)
 Type ```node```
+
 Step 5)
 Here we need to test if web3 is installed type and hit enter 
-```var Web3 = require(web3);```
+```var Web3 = require('web3');```
+
 Step 6)
 Type:
 ```Web3```
