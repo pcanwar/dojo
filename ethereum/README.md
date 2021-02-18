@@ -51,7 +51,9 @@ Here we need to test if web3 is installed type and hit enter
 
 Step 6)
 Type:
-```Web3```\
+```Web3```
+
+---
 
 #### Truffle
 
@@ -61,7 +63,10 @@ Install Truffle or update it to the latest version:
 ```-g``` & ```--global``` to install it in the system.
 
 Run Truffle Development environment on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux)  
-```truffle develop```\
+```truffle develop```
+
+---
+
 
 
 
