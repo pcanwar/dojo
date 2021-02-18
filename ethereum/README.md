@@ -63,7 +63,7 @@ Install Truffle or update it to the latest version:
 
 ```-g``` & ```--global``` to install it in the system.
 
-Run Truffle Development environment on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux)  
+Run Truffle development environment on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux)  
 ```truffle develop```
 
 ---
