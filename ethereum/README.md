@@ -1,5 +1,5 @@
 
-We need to install those packages before we start our 3rd week.
+We need to install those packages before we start our 3rd, 4th, and 5th weeks.
 
 ### Wallet Account
 * Install [Metamask](https://metamask.io/). 
@@ -23,6 +23,8 @@ A quick way to test simple Node.js/JavaScript code, type ```node``` on the open 
 ### Library 
 Open the command prompt (in Windows) or terminal (in Mac or UNIX/Linux):
 
+#### Web3
+
 Step 1): Create a directory and change the current working directory to the new directory that you created
 ```
 mkdir web3practice
@@ -37,8 +39,8 @@ Step 3)
 ##### Install web3 
 ```npm install web3 --save```
 
-```--save``` is to install web3 on the web3practice directory
-```--global``` If you want to install it in the system
+```-s``` &  ```--save``` is to install web3 on the web3practice directory
+```-g``` & ```--global``` If you want to install it in the system
 
 Step 4)
 Type ```node```
@@ -50,6 +52,18 @@ Here we need to test if web3 is installed type and hit enter
 Step 6)
 Type:
 ```Web3```
+
+#### Truffle
+
+Install Truffle or update it to the latest version: 
+```npm install -g truffle ```
+
+```-g``` & ```--global``` to install it in the system.
+
+Run Truffle Development environment on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux)  
+```truffle develop```
+
+
 
 Let me know if you have any erros.
 
