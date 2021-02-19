@@ -21,6 +21,7 @@ After you install nodejs make sure ```npm``` package is installed as well. To ch
 A quick way to test simple Node.js/JavaScript code, type ```node``` on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux) 
 
 ### Library 
+
 Open the command prompt (in Windows) or terminal (in Mac or UNIX/Linux):
 ---
 
