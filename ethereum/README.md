@@ -58,13 +58,15 @@ Type:
 
 #### Truffle
 
-Install Truffle or update it to the latest version: 
+Towork on truffle development environment we need to install or update Truffle to the latest version: 
+
 ```npm install -g truffle ```
 
 ```-g``` & ```--global``` to install it in the system.
 
-Run Truffle development environment on the open command prompt (in Windows) or terminal (in Mac or UNIX/Linux)  
-```truffle develop```
+Run truffle -h to list all commands  
+```truffle -h```
+
 
 ---
 
