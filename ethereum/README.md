@@ -1,5 +1,7 @@
 
 We need to install those packages before we start our 3rd, 4th, and 5th weeks.
+# Week 3 Installs
+
 
 ### Wallet Account
 
@@ -70,6 +72,8 @@ Type:
 
 ---
 
+## Week 4 Installs
+
 #### Truffle
 
 Towork on truffle development environment we need to install or update Truffle to the latest version: 
@@ -84,8 +88,30 @@ Run truffle -h to list all commands
 
 ---
 
+#### How to use Infura in Web3
+
+Step 1) Login/Create Account [https://infura.io/login]
+
+Step 2) Click Ethereum left hand panel > Create New Project 
+
+Step 3) Change endpoint network dropdown to Ropsten
+
+Step 4) Copy https endpoint URL
+
+Whenever using web3, do the following:
+
+1)Set an endpoint url
+```var url = 'Your Endpoint URL Infura Here'```
+
+2)Set a web3 to a new instance of Web3 connected to the url
+```var web3 = new Web3(url)```
+
+3)Call the web3 variable
+```web3```
 
 
 
-Let me know if you have any erros.
+---
+
+Let me know if you have any errors.
 
