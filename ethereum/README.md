@@ -72,7 +72,7 @@ Type:
 
 ---
 
-## Week 4 Installs
+# Week 4 Installs
 
 #### Truffle
 
