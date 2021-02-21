@@ -22,7 +22,7 @@ contract Eexample {
     uint256 counter ;
      // uint256 public count = 2;
     
-    // function updatePlaceName() public {
+    // function updateCount() public {
     //     count += 5;
     // }
     
