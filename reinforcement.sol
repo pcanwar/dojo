@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 /**
- * @title IsMultiple
+ * @title Reinforcement 1 - Exercises
  * @ Question 1) This is a short solidity function, isMultiple(n, m), 
  * that takes two integer values and returns True if n is a multiple of m, 
  * and False otherwise.
