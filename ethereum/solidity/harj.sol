@@ -27,12 +27,11 @@ contract Eexample {
     // }
     
     function addCar(string memory _name, uint256 _year, uint256 _amount) public{
-    uint256 count = counter++;
     
     Car memory newCar = Car(_name, _year, _amount, false);
     carOwner[msg.sender] = newCar;
     
-    carId[count] = newCar;
+    carId[counter++] = newCar;
 
     }
     
