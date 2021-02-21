@@ -113,5 +113,11 @@ Whenever using web3, do the following:
 
 ---
 
-Let me know if you have any errors.
+#### Solidity Docs & FAQs
 
+Please bookmark Solidity in Depth - (https://docs.soliditylang.org/en/v0.5.3/solidity-in-depth.html)
+
+Please review FAQs- (https://docs.soliditylang.org/en/v0.4.24/frequently-asked-questions.html#frequently-asked-questions)
+
+
+---
