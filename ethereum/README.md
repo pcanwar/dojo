@@ -78,9 +78,10 @@ Type:
 
 Towork on truffle development environment we need to install or update Truffle to the latest version: 
 
-```npm install -g truffle ``` (you may need to add ```sudo``` to beginning for Mac OS)
+```npm install -g truffle ``` 
 
-```-g``` & ```--global``` to install it in the system.
+you may need to add ```sudo``` to beginning for Mac OS, 
+if having issues in Windows you may need to [update npm](https://github.com/felixrieseberg/npm-windows-upgrade)
 
 Run truffle -h to list all commands  
 ```truffle -h```
@@ -90,7 +91,7 @@ Run truffle -h to list all commands
 
 #### How to use Infura in Web3
 
-Step 1) Login/Create Account - (https://infura.io/login)[https://infura.io/login]
+Step 1) Login/Create Account - [https://infura.io/login](https://infura.io/login)
 
 Step 2) Click Ethereum left hand panel > Create New Project 
 
