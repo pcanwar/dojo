@@ -78,7 +78,7 @@ Type:
 
 Towork on truffle development environment we need to install or update Truffle to the latest version: 
 
-```npm install -g truffle ```
+```npm install -g truffle ``` (you may need to add ```sudo``` to beginning for Mac OS)
 
 ```-g``` & ```--global``` to install it in the system.
 
@@ -90,7 +90,7 @@ Run truffle -h to list all commands
 
 #### How to use Infura in Web3
 
-Step 1) Login/Create Account [https://infura.io/login]
+Step 1) Login/Create Account - (https://infura.io/login)[https://infura.io/login]
 
 Step 2) Click Ethereum left hand panel > Create New Project 
 
@@ -115,9 +115,9 @@ Whenever using web3, do the following:
 
 #### Solidity Docs & FAQs
 
-Please bookmark Solidity in Depth - (https://docs.soliditylang.org/en/v0.5.3/solidity-in-depth.html)
+Please bookmark Solidity in Depth - [https://docs.soliditylang.org/en/v0.5.3/solidity-in-depth.html](https://docs.soliditylang.org/en/v0.5.3/solidity-in-depth.html)
 
-Please review FAQs- (https://docs.soliditylang.org/en/v0.4.24/frequently-asked-questions.html#frequently-asked-questions)
+Please review FAQs- [https://docs.soliditylang.org/en/v0.4.24/frequently-asked-questions.html#frequently-asked-questions](https://docs.soliditylang.org/en/v0.4.24/frequently-asked-questions.html#frequently-asked-questions)
 
 
 ---
