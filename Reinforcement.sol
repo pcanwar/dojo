@@ -19,12 +19,13 @@ contract Math{
     function isMultiple(uint8 _n, uint8 _m) public pure returns(bool) {
         
         // Write your code here
+    
     }
     
     function max(uint256 _n, uint256 _m) public pure returns(uint256) {
-                // Write your code here
-
-           
-       }
+        // Write your code here   
+    
+    
+    }
 
 }
