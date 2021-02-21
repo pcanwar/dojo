@@ -128,3 +128,9 @@ Please review FAQs- [https://docs.soliditylang.org/en/v0.4.24/frequently-asked-q
 Bookmark Web-based Solidity IDE Remix - https://remix.ethereum.org/
 
 ---
+
+#### Install Solidity Extension in VS Code
+
+https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity
+
+---
