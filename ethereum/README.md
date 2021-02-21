@@ -121,3 +121,9 @@ Please review FAQs- (https://docs.soliditylang.org/en/v0.4.24/frequently-asked-q
 
 
 ---
+
+#### Remix
+
+Bookmark Web-based Solidity IDE Remix - https://remix.ethereum.org/
+
+---
