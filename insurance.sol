@@ -3,12 +3,18 @@ pragma solidity >=0.6.0 <0.8.1;
 
 /**
  * @title Tech Insurance tor
- * @dev complete the functions
+ * @dev 
+ * Step1: Complete the functions in the insurance smart contract
+ * Step2:Add any required methods that are needed to check if the function are called correctly, 
+ * and also add a modifier function that allows only the owner can run the changePrice function.
+ * Step3: Add any error handling that may occur in any function
+ * Step 4: add ERC 721 Token
+ * 
  */
 contract TechInsurance {
     
     /** 
-     * Define two structs
+     * Defined two structs
      * 
      * 
      */
