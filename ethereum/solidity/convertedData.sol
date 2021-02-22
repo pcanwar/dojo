@@ -10,7 +10,8 @@ contract Conversion {
     
     function conversion ( ) public {
         int  getA;                
-        getA = getNumber;          // Compilation successful because a 8-bytes type can fit into a 32-bytes type 
+        getA = getNumber;         // Compilation successful because:
+                                  // a 8-bytes type can fit into a 32-bytes type 
                                   //and there is no lost of data
                                 
                                 
