@@ -9,11 +9,11 @@ contract Arrays {
 
     int8[] dynamicArray;
 
-    bool[] dynamicBoolArray;
+    bool[] boolArray;
 
     function test() public {
-        //  memory array for 8 indexs 
-        dynamicBoolArray = new bool[](7);
+        //  memory array for 7 indexs 
+        boolArray = new bool[](7);
         
         // Explicit conversion 
         dynamicArray = [int8(1),2,3];
