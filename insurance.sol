@@ -8,7 +8,9 @@ pragma solidity >=0.6.0 <0.8.1;
  * Step2:Add any required methods that are needed to check if the function are called correctly, 
  * and also add a modifier function that allows only the owner can run the changePrice function.
  * Step3: Add any error handling that may occur in any function
- * Step 4: add ERC 721 Token
+ * Step4: Add a modifer function to check the time if the client insurance is valid.
+ * Step 6 (opcional): Add a refund function that refunds money back to the client after one week. Guaranteed Money Back Plan.  
+ * Step 5: implement ERC 721 Token to this contract and change what it needs to be changed. 
  * 
  */
 contract TechInsurance {
@@ -46,19 +48,23 @@ contract TechInsurance {
     }
     
     
-    function changeFalse(uint _productIndex) public {
+    function doNotOffer(uint _productIndex) public {
 
     }
     
-    function changeTrue(uint _productIndex) public {
+    function forOffer(uint _productIndex) public {
 
     }
     
     function changePrice(uint _productIndex, uint _price) public {
 
     }
-    
-    function clientSelect(uint _productIndex) public payable {
+    /**
+    * @dov 
+    * Every client buys an insurance, 
+    * you need to map the client's address to the id of product to struct client, using (client map)
+    */
+    function buyInsurance(uint _productIndex) public payable {
         
     } 
     
