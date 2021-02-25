@@ -59,8 +59,9 @@ contract TechInsurance {
     function changePrice(uint _productIndex, uint _price) public {
 
     }
+    
     /**
-    * @dov 
+    * @dev 
     * Every client buys an insurance, 
     * you need to map the client's address to the id of product to struct client, using (client map)
     */
