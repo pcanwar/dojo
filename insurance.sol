@@ -9,8 +9,8 @@ pragma solidity >=0.6.0 <0.8.1;
  * and also add a modifier function that allows only the owner can run the changePrice function.
  * Step3: Add any error handling that may occur in any function
  * Step4: Add a modifer function to check the time if the client insurance is valid.
- * Step 6 (opcional): Add a refund function that refunds money back to the client after one week. Guaranteed Money Back Plan.  
- * Step 5: implement ERC 721 Token to this contract and change what it needs to be changed. 
+ * Step5 (opcional): Add a refund function that refunds money back to the client after one week. Guaranteed Money Back Plan.  
+ * Step6: implement ERC 721 Token to this contract and change what it needs to be changed. 
  * 
  */
 contract TechInsurance {
