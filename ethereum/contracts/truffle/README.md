@@ -1,28 +1,28 @@
 # Objectives
 
-1. Connect web3 to ganache local blockchain and run basic commands.
-2. List account information from ganache using web3.
-3. Make calls from web3 using your IDE rather than your terminal.
+1. Connect web3 to [ethereum network] e.g, ganache local blockchain, truffle, ethereum testnet and so on .
+2. List account information from [ethereum network] e.g, ganache using web3.
+3. Make calls from web3 using your IDE rather than the terminal.
 
+```sh
 npm init -y
-
+```
 ## **Recap. connect to Metamask**
 
-1- install Metamask on Chrome Extension
- 2- configuring Metamask Private network:
- 1- from option, use &quot;Custom RPC&quot;, at address [http://127.0.0.1:xxxx](about:blank)
- 2- pick up any private keys to import accounts.
+1- install Metamask as an extension on the browser.
+2- configuring metamask network eg, ganache
+ - from metamask option, use -> Custom RPC; add at address [http://127.0.0.1:xxxx](about:blank)
+ - from ganache, you pick up any private keys to import accounts into metamask.
 
 ## **Mocha and Chai**
 
-![](RackMultipart20210301-4-zk3uu2_html_237499165a11f2b9.gif)
 
 Truffle supports and comes preinstalled with Mocha and Chai. Mocha is a testing framework for javascript, it can be used for front end applications and back end applications on decentralized apps while Chai is an Assertion Library. They are popular for testing the code.
 
 - Chai is an Assertion Library
 - Both are available as NPM packages
-- Very popular between developer for testing their code
-- Truffle supports and comes preinstalled with Mocha and Chai
+- Very popular between developer for testing their codes
+- Truffle supports and comes pre-installed with these libraries (Mocha and Chai)
 
 **Truffle**
 
