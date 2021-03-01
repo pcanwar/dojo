@@ -19,3 +19,8 @@ web3.eth.getBlock("latest", function(error, result){
         console.log(result)
 
 })
+
+async function check(){
+    const latestBlock = await web3.eth.getBlockNumber();
+    console.log(latestBlock)
+}
