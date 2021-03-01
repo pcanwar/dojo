@@ -26,14 +26,24 @@ Truffle supports and comes preinstalled with Mocha and Chai. Mocha is a testing 
 
 **Truffle**
 
-- verify if Truffle is installed truffle -v
-- install Truffle or update it to the latest version: npm install -g truffle
+- Verify if Truffle is installed already
+```sh 
+truffle -v
+```
+- to install Truffle or to update it to the latest version:
+```sh 
+npm install -g truffle
+``` 
 
 Use truffle boxes to help you build DApp. Truffle Boxes contain modules, Solidity contracts &amp; libraries, front-end views and more. More information in [Truffle Boxes](https://truffleframework.com/boxes)
 
-Run truffle unbox \&lt;box\_name\&gt; To download any boxes from truffle
+Run 
+```sh 
+truffle unbox xxxx 
+``` 
 
-Note(1): installing Truffle globally using the command sudo we run the develop command sudo truffle develop
+xxxx is to download any available boxes from truffle
+
 
 1- download **webpack** box to help for building the front-end the application- in the terminal use these command
 
@@ -47,6 +57,9 @@ Note(1): installing Truffle globally using the command sudo we run the develop c
 ## **Connect Truffle to Metamask**
 
 1- install Metamask on Chrome Extension
- 2- configuring Metamask Private network:
- 1- from option, use &quot;Custom RPC&quot;, at address [http://127.0.0.1:xxxx](about:blank)
- 2- pick up any private keys to import accounts.
+ 2- configuring Metamask network:
+ - from option, use &quot;Custom RPC&quot;, at address [http://127.0.0.1:xxxx](about:blank)
+ - pick up any private keys to import accounts.
+
+### Note(1): 
+Installing Truffle globally using the command sudo you need to run the develop command sudo truffle develop
