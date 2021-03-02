@@ -19,20 +19,35 @@ contract Array_dynamic_static{
       arr[_index] = _newNumber;
     }
 
-    function addNumber(uint _newNumber) public {
+    function insertNumber(uint _newNumber) public {
       arr.push(_newNumber);
     }
     
+    function delNumber(uint _newNumber) public {
+      delete arr[_newNumber];
+    }
+    
+    function getArr() public view returns (uint [] memory){
+        return arr;
+    }
     
     /*  static  */
     function setStaticArrayNumber(uint _index, uint _newNumber) public {
       staticArr[_index] = _newNumber;
     }
     
-    // what type of error is this?
-    function addStaticArrayNumber(uint _newNumber) public {
-        staticArr.push(_newNumber);
+    function delStaticArrNumber(uint _newNumber) public {
+      delete staticArr[_newNumber];
     }
+    
+    function getStaticArrayNumber() public view returns (uint [] memory){
+        return arr;
+    }
+    
+    // what type of error is this?
+    // function addStaticArrayNumber(uint _newNumber) public {
+    //     staticArr.push(_newNumber);
+    // }
 
     
 }
