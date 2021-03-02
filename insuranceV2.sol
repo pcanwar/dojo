@@ -10,7 +10,7 @@ pragma solidity >=0.6.0 <0.8.1;
  * Step3: handle any errors that may occur in any function
  * Step4: Add a modifer function to check the time if the client insurance is valid.
  * Step5 (opcional): Add a refund function that refunds money back to the client after one week. Guaranteed Money Back Plan.  
- * Step6: remove the ERC 721 functions from the insurance contract and implement them in this contract and change what it needs to be changed.
+ * Step6: remove the ERC 721 functions from the insurance contract and implement them in this contract and change what it needs to be changed (e.g transfer and etc)
  */
 contract TechInsurance {
     
