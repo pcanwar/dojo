@@ -1,3 +1,3 @@
 # Blockchain Class
 
-* Each branch has an assignment  
+* Each branch will have an assignment/s  
