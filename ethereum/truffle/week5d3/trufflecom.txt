@@ -1,0 +1,16 @@
+    
+    Change dir into the project:
+    truffle init
+    truffle compile 
+    truffle compile --all
+    truffle compile --list
+    truffle migrate
+    truffle console
+        migrate --reset
+
+    truffle migrate --reset
+    truffle develop
+
+
+
+  let instance = await SimpleStorage.deployed()
