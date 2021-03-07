@@ -5,7 +5,7 @@ First, let's create a truffle project with no smart contracts included
 
     truffle init
 
-This will create those paths, 
+This will create a project structure, 
 
   - contracts: a directory for Solidity contracts
   - migrations: a directory for scriptable deployment files
