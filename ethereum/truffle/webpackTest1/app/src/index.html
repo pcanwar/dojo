@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy a car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>Example Truffle Dapp</h1>
+
+    <h1>Add a car </h1>
+
+ 
+
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      placeholder="e.g. the car name"
+      required
+    />
+    <label for="year">Year:</label>
+    <input type="text" id="year" placeholder="e.g. 2021" />
+
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" placeholder="e.g. 95 wei" />
+
+    <button onclick="App.addCar()">Add Car</button>
+
+    <br>
+    <br>
+    <label for="id">Id:</label>
+    <input type="text" id="id" placeholder="e.g. 1 " />
+
+    <button onclick="App.fatch()">Look for the Car</button>
+    
+    <br>
+    <br>
+    <label for="id">Id:</label>
+    <input type="text" id="id" placeholder="e.g. 1 " />
+
+    <label for="price">price:</label>
+    <input type="text" id="price" placeholder="e.g. 1 " />
+
+
+    <button onclick="App.payment()">Buy a car</button>
+
+    <p id="status"></p>
+    <p>
+      <strong>Hint:</strong> open the browser developer console to view any
+      errors and warnings.
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html>
