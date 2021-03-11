@@ -20,7 +20,8 @@ Download webpack box to help for building the front-end the application- in the 
 * Create a project using ```truffle unbox webpack```
 * In the project directory run ```truffle develop``` 
 * Compile and deploy the smart contract ```migrate --reset```
-* Open new Terminal and run ```npm run dev```
+* Open new Terminal and change directory to app ```cd app``` and then run ```npm run dev```
+
     * Check URL Truffle: http://127.0.0.1:xxxx
 
 
