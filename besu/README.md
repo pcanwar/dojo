@@ -1,5 +1,5 @@
 
-## Requirements 
+## Hardware Requirements 
 
 ### _Public networks require for_ [Besu](https://besu.hyperledger.org/en/stable/HowTo/Get-Started/System-Requirements/System-Requirements-Public/#system-requirements-for-public-networks).
 
