@@ -6,7 +6,7 @@
 * 2 vCPUs
 * 4 GiB of Memory RAM (Minimum)
 * Free disk space: (/boot: 128MiB)- ($HOME: 30GiB) 
-* If you use VM you need to double the minimum requirements
+* If you want to use VM you need to double the minimum requirements since both the host OS and the guest OS need enough CPU/RAM.
 
 
 Run this command to print the processor architecture in your system
