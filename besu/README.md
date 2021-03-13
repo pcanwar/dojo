@@ -1,11 +1,34 @@
 
 ## Hardware Requirements 
 
-### _Public networks require for_ [Besu](https://besu.hyperledger.org/en/stable/HowTo/Get-Started/System-Requirements/System-Requirements-Public/#system-requirements-for-public-networks).
+[Besu](https://besu.hyperledger.org/en/stable/HowTo/Get-Started/System-Requirements/System-Requirements-Public/#system-requirements-for-public-networks).
+### public networks and private networks require
 
-- 8 GiB of Memory, 2 vCPUs (64-bit platform) 
+* OS/CPU Architecture: Linux x86_64 (64-bit platform)
+* 2 vCPUs
+* 8 GiB of Memory RAM
+* If you use VM you need to double the minimum requirements
 
-- Fast synchronization requires approximately 1TB of Space. 
-- Full synchronization requires approximately 3TB of Space.
+- Fast synchronization approximately 1TB of Space. 
+- Full synchronization approximately 3TB of Space.
 
-### _Private networks require for_ [Besu]
+
+Run this command to print the processor architecture in your system
+
+```-p, --processor```
+
+```uname -p```
+
+Run this command nproc(1) to print the number of CPUS processing units available in your system
+
+```nproc```
+
+Check your system Memory RAM:
+
+```free -h | awk '/^Mem/ {print $2}'```
+
+Check free disk space of the the home dir
+
+```df -h --output=avail $HOME```
+
+
