@@ -7,7 +7,8 @@
 * OS/CPU Architecture: Linux x86_64 (64-bit platform)
 * 2 vCPUs
 * 8 GiB of Memory RAM
-* If you use VM you need to double the minimum requirements
+* If you want to use VM you need to double the minimum requirements since both the host OS and the guest OS need enough CPU/RAM.
+
 
 - Fast synchronization approximately 1TB of Space. 
 - Full synchronization approximately 3TB of Space.
