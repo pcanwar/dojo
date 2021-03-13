@@ -12,20 +12,23 @@
 Run this command to print the processor architecture in your system ```-p```, ```--processor```
 
   ```sh
-  uname -p```
-
+  uname -p
+  ```
 
 Run this command nproc(1) to print the number of CPUS processing units available in your system
 
 ```sh
-nproc```
+nproc
+```
 
 Check your system Memory RAM: 
 
 ```sh
-free -h | awk '/^Mem/ {print $2}'```
+free -h | awk '/^Mem/ {print $2}'
+```
 
 Check free disk space of the the home dir 
 
 ```sh
-df -h --output=avail $HOME```
+df -h --output=avail $HOME
+```
