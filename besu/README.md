@@ -1,7 +1,8 @@
 
 ## Hardware Requirements 
 
-[Besu](https://besu.hyperledger.org/en/stable/HowTo/Get-Started/System-Requirements/System-Requirements-Public/#system-requirements-for-public-networks).
+[Besu](https://besu.hyperledger.org/en/stable/HowTo/Get-Started/System-Requirements/System-Requirements-Public/#system-requirements-for-public-networks). 
+Linux
 ### public networks and private networks require
 
 * OS/CPU Architecture: Linux x86_64 (64-bit platform)
