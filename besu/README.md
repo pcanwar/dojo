@@ -21,7 +21,7 @@ Run this command to print the processor architecture in your system ```-p, --pro
 uname -p
 ```
 
-Run this command nproc(1) to print the number of CPUS processing units available in your system
+Run this command [nproc(1)](https://man7.org/linux/man-pages/man1/nproc.1.html) to print the number of CPUS processing units available in your system
 
 ```sh
 nproc
