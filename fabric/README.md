@@ -9,21 +9,23 @@
 * If you want to use VM you need to double the minimum requirements since both the host OS and the guest OS need enough CPU/RAM.
 
 
-Run this command to print the processor architecture in your system
+Run this command to print the processor architecture in your system ```-p```, ```--processor```
 
-```-p```, ```--processor```
-
-  ```uname -p```
+  ```sh
+  uname -p```
 
 
 Run this command nproc(1) to print the number of CPUS processing units available in your system
 
-```nproc```
+```sh
+nproc```
 
 Check your system Memory RAM: 
 
-```free -h | awk '/^Mem/ {print $2}'```
+```sh
+free -h | awk '/^Mem/ {print $2}'```
 
 Check free disk space of the the home dir 
 
-```df -h --output=avail $HOME```
+```sh
+df -h --output=avail $HOME```
