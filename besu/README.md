@@ -39,4 +39,6 @@ Check free disk space of the the home dir
 df -h --output=avail $HOME
 ```
 
+## Software Requirements 
 
+64-bit native version of Ubuntu, SUSE, openSUSE, CentOS, Fedora, Debian, or Mint
