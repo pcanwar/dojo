@@ -141,8 +141,38 @@ Install Docer Engine
  apt-get install docker-compose
 ```
 
-Make sure these packages: curl, npm, docker, docker-compose, go, python, and node are installed. 
+If there is an permission issue on docker.sock you need to check the sock 
+```sh
+sudo chmod +x /var/run/docker.sock
+```
 
+Change the permissions for docker-compose
+
+```sh
+sudo chmod +x /usr/bin/docker-compose
+```
+
+
+Make sure these packages: curl, npm, docker, docker-compose, go, python, and node are installed. 
+```sh
+git -v
+
+python --version
+
+docker -v
+
+docker-compose --version
+
+curl --version
+
+```
+
+
+Restart the system
+
+```sh
+sudo reboot now
+```
 
 
 ### Fabric
@@ -171,10 +201,7 @@ Add your user to the docker group.
 ```sh
 sudo usermod -a -G docker fabric
 ```
-If there is an permission issue on docker.sock you need to check the sock 
-```sh
-sudo chmod 666 /var/run/docker.sock
-```
+
 
 
 ### Install simple network:
@@ -220,17 +247,9 @@ cd fabric-samples/test-network
 
 The script network.sh is to configure the network
 ```sh
-./network.sh --help
+./network.sh -h
 ```
 
-Output from help:
-```sh 
- Possible Mode and flag combinations
-   up -ca -r -d -s -verbose
-   up createChannel -ca -c -r -d -s -verbose
-   createChannel -c -r -d -verbose
-   deployCC -ccn -ccl -ccv -ccs -ccp -cci -r -d -verbose
-   ```
    
 To create a channel 
 ```sh
