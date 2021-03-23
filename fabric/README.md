@@ -180,6 +180,8 @@ sudo chmod 666 /var/run/docker.sock
 ### Install simple network:
 https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html
 ```sh
+mkdir fabric
+cd fabric
 curl -sSL https://bit.ly/2ysbOFE | bash -s
 ```
  
@@ -187,6 +189,58 @@ Check the images in docker
 ```sh
 dockers images
 ```
+
+The binary of fabric is under ```fabric-samples/bin```
+You can add to ```.profile```
+
+Path to bin: /home/fabric/fabric/fabric-samples/bin
+
+```sh
+echo 'export PATH="$PATH:/usr/local/go/bin:PATH_To_Bin"' >> $HOME/.profile
+```
+
+POINT GOPATH env var to the base fabric
+
+```sh
+echo 'export GOPATH="$HOME/fabric"' >> $HOME/.profile
+```
+
+Confirm and reload the change
+```sh
+source $HOME/.profile
+```
+
+To test the installations and to deploy a single RAFT (test) ordering service:
+
+Go to the ```fabric-samples/test-network``` dir
+
+```sh
+cd fabric-samples/test-network
+```
+
+The script network.sh is to configure the network
+```sh
+./network.sh --help
+```
+
+To create a channel 
+```sh
+./network.sh up createChannel -c channel1
+```
+
+The deployment CC - asset-transfer (basic) chaincode
+```sh
+./network.sh deployCC -c channel1
+```
+
+docker ps returns an overview of all running containers.
+```docker ps```
+
+```docker-compose -f docker/docker-compose-test-net.yaml ps```
+
+Display all logs
+```docker-compose -f docker/docker-compose-test-net.yaml logs -f -t```
+
 
 
 
