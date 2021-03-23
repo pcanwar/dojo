@@ -118,3 +118,80 @@ sudo apt-get install \
 ```sh 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
+Add: add-apt-repository:
+```sh 
+add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   Stable"
+ ```
+Update 
+```sh 
+sudo apt-get update
+```
+Install Docer ENGINE
+```sh 
+ apt-get install docker-ce docker-ce-cli containerd.io
+ apt-get install docker-compose
+```
+
+Make sure these packages: curl, npm, docker, docker-compose, go, python, and node are installed. 
+
+
+## Docker
+
+Dillinger is very easy to install and deploy in a Docker container.
+
+By default, the Docker will expose port 8080, so change this within the
+Dockerfile if necessary. When ready, simply use the Dockerfile to
+build the image.
+
+
+### Fabric
+
+Make sure the docker daemon is running. [Docker and Docker Compose](https://hyperledger-fabric.readthedocs.io/en/release-2.2/prereqs.html#docker-and-docker-compose)
+
+```sh
+sudo systemctl start docker
+```
+Optional: If you want the docker daemon to start when the system starts, use the following:
+```sh
+sudo systemctl enable docker
+```
+
+Create user account in the system using:  adduser __name__
+```sh
+sudo adduser fabric
+```
+Ass your user to the sudo group also to have administrative rights
+```sh
+sudo usermod -aG sudo fabric
+```
+Add your user to the docker group.
+```sh
+sudo usermod -a -G docker fabric
+```
+If there is an permission issue on docker.sock you need to check the sock 
+```sh
+sudo chmod 666 /var/run/docker.sock
+```
+
+ 
+Before running any git clone commands, run the following commands:
+git config --global core.autocrlf false
+git config --global core.longpaths true
+
+
+### Install simple network:
+https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html
+```sh
+curl -sSL https://bit.ly/2ysbOFE | bash -s
+```
+ 
+Check the images in docker
+```sh
+dockers images
+```
+
+
+
