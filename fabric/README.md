@@ -36,7 +36,6 @@ df -h --output=avail $HOME
 ## Software Requirements 
 
 Linux (ubuntu)
-
 To connect to the instance system use in the cloud you can access the system using ```ssh```
 - [keygen] - Create a new key pair 
 
@@ -67,11 +66,18 @@ Again update the system
 sudo apt-get update
 ```
 
-Install git
+#### Install git
 ```sh 
 sudo apt-get install git
 ```
-Install cURL 
+ 
+Before running any git clone commands, run the following commands:
+```sh 
+git config --global core.autocrlf false
+git config --global core.longpaths true
+```
+
+#### Install cURL 
 ```sh 
 sudo apt-get install curl 
 ```
@@ -82,7 +88,7 @@ sudo apt update
 sudo apt install golang-go
 ```
 
-Install an editor such as vim
+#### Install an editor such as vim
 ```sh 
 sudo apt-get install vim
 ```
@@ -96,13 +102,13 @@ You may also need development tools to build native addons:
 ```sh 
 sudo apt-get install gcc g++ make
 ```
-### Python
+#### Python
 
 install python2.7
 ```sh 
 sudo apt-get install python2.7
 ```
-### Docker
+#### Docker
 
 Before you install Docker we need to update and insatll some paclages such as APT transport, A certificate authority (CA), and GnuPG for allowing encrypting and signing data and communications. 
 1- SET UP THE REPOSITORY
@@ -129,7 +135,7 @@ Update
 ```sh 
 sudo apt-get update
 ```
-Install Docer ENGINE
+Install Docer Engine 
 ```sh 
  apt-get install docker-ce docker-ce-cli containerd.io
  apt-get install docker-compose
@@ -137,14 +143,6 @@ Install Docer ENGINE
 
 Make sure these packages: curl, npm, docker, docker-compose, go, python, and node are installed. 
 
-
-## Docker
-
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the
-Dockerfile if necessary. When ready, simply use the Dockerfile to
-build the image.
 
 
 ### Fabric
@@ -158,6 +156,8 @@ Optional: If you want the docker daemon to start when the system starts, use the
 ```sh
 sudo systemctl enable docker
 ```
+
+#### Create and config a user
 
 Create user account in the system using:  adduser __name__
 ```sh
@@ -175,11 +175,6 @@ If there is an permission issue on docker.sock you need to check the sock
 ```sh
 sudo chmod 666 /var/run/docker.sock
 ```
-
- 
-Before running any git clone commands, run the following commands:
-git config --global core.autocrlf false
-git config --global core.longpaths true
 
 
 ### Install simple network:
