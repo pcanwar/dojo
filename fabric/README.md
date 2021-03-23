@@ -37,10 +37,20 @@ df -h --output=avail $HOME
 
 Linux (ubuntu)
 
-# Fabric
-
 To connect to the instance system use in the cloud you can access the system using ```ssh```
 - [keygen] - Create a new key pair 
+
+Open a terminal and run the following command:
+```sh
+ssh-keygen 
+```
+It generates two files, by default called ``id_rsa`` and ```id_rsa.pub```. 
+
+Copy the contents of the ```.pub``` file, and paste it into the SSH key content field
+```sh
+cat ~/.ssh/id_rsa.pub
+```
+
 
 ## Installation
 Steps to take before installing the Farbric platfrom
