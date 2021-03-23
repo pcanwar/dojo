@@ -223,10 +223,20 @@ The script network.sh is to configure the network
 ./network.sh --help
 ```
 
+Output from help:
+```sh 
+ Possible Mode and flag combinations
+   up -ca -r -d -s -verbose
+   up createChannel -ca -c -r -d -s -verbose
+   createChannel -c -r -d -verbose
+   deployCC -ccn -ccl -ccv -ccs -ccp -cci -r -d -verbose
+   ```
+   
 To create a channel 
 ```sh
 ./network.sh up createChannel -c channel1
 ```
+
 
 The deployment CC - asset-transfer (basic) chaincode
 ```sh
