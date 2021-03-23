@@ -287,7 +287,8 @@ docker-compose -f docker/docker-compose-test-net.yaml logs -f -t
 Start the network
 
 ```sh
-docker-compose -f docker/docker-compose-test-net.yaml up -d```
+docker-compose -f docker/docker-compose-test-net.yaml up -d
+```
 
 
 
