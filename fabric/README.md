@@ -269,13 +269,25 @@ The deployment CC - asset-transfer (basic) chaincode
 ```
 
 docker ps returns an overview of all running containers.
-```docker ps```
 
-```docker-compose -f docker/docker-compose-test-net.yaml ps```
+```sh
+docker ps
+```
+
+```sh
+docker-compose -f docker/docker-compose-test-net.yaml ps
+```
 
 Display all logs
-```docker-compose -f docker/docker-compose-test-net.yaml logs -f -t```
 
+```sh
+docker-compose -f docker/docker-compose-test-net.yaml logs -f -t
+```
+
+Start the network
+
+```sh
+docker-compose -f docker/docker-compose-test-net.yaml up -d```
 
 
 
