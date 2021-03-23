@@ -292,6 +292,8 @@ docker-compose -f docker/docker-compose-test-net.yaml up -d
 
 
 #### Set environment variables for peer0 Org1
+https://hyperledger-fabric.readthedocs.io/en/release-2.2/test_network.html#interacting-with-the-network
+
 vim org1.sh
 
 
@@ -303,4 +305,36 @@ export CORE_PEER_LOCALMSPID="Org1MSP"
 export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
 export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
 export CORE_PEER_ADDRESS=localhost:7051
+```
+
+```sh
+source ./org1.sh
+```
+
+Check env 
+
+```sh
+printenv | grep CORE
+```
+
+After you have used the network.sh to create a channel, you can start a chaincode on the channel using the following command:
+
+```sh
+peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C $CHANNEL_NAME -n basic --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"function":"InitLedger","Args":[]}'
+
+```
+
+
+You can now query the ledger from your CLI. Run the following command to get the list of assets that were added to your channel ledger:
+
+```sh
+peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}' | jq .
+
+peer chaincode query -C mychannel -n basic -c '{"Args":["ReadAsset","asset1"]}' | jq .
+```
+
+Create assit 
+
+```sh
+peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C $CHANNEL_NAME -n basic --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"function":"CreateAsset","Args":["asset","color","#","NAME",""]}'
 ```
