@@ -135,6 +135,11 @@ Update
 ```sh 
 sudo apt-get update
 ```
+if there is an issue with the system that is Unable to locate package check these links 
+
+https://docs.docker.com/engine/install/ubuntu/
+https://unix.stackexchange.com/questions/363048/unable-to-locate-package-docker-ce-on-a-64bit-ubuntu
+
 Install Docer Engine 
 ```sh 
  apt-get install docker-ce docker-ce-cli containerd.io
