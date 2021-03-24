@@ -161,11 +161,11 @@ sudo chmod +x /usr/bin/docker-compose
 
 Make sure these packages: curl, npm, docker, docker-compose, go, python, and node are installed. 
 ```sh
-git -v
+git --version
 
 python --version
 
-docker -v
+docker --version
 
 docker-compose --version
 
@@ -220,7 +220,7 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s
  
 Check the images in docker
 ```sh
-dockers images
+docker images
 ```
 
 The binary of fabric is under ```fabric-samples/bin```
@@ -328,9 +328,9 @@ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.exa
 You can now query the ledger from your CLI. Run the following command to get the list of assets that were added to your channel ledger:
 
 ```sh
-peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}' | jq .
+peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}' 
 
-peer chaincode query -C mychannel -n basic -c '{"Args":["ReadAsset","asset1"]}' | jq .
+peer chaincode query -C mychannel -n basic -c '{"Args":["ReadAsset","asset1"]}' 
 ```
 
 Create an asset 
