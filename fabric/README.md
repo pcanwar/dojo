@@ -111,6 +111,7 @@ sudo apt-get install python2.7
 #### Docker
 
 Before you install Docker we need to update and insatll some paclages such as APT transport, A certificate authority (CA), and GnuPG for allowing encrypting and signing data and communications. 
+
 1- SET UP THE REPOSITORY
 ```sh 
 sudo apt update
@@ -146,6 +147,10 @@ Install Docer Engine
  apt-get install docker-ce docker-ce-cli containerd.io
  apt-get install docker-compose
 ```
+
+https://docs.docker.com/compose/install/
+
+
 
 If there is an permission issue on docker.sock you need to check the sock 
 ```sh
