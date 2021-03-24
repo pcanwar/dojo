@@ -267,10 +267,27 @@ To create a channel
 ./network.sh up createChannel -c channel1
 ```
 
+install tree
+```sh
+sudo apt  install tree
+```
 
+You can see the containers running on the system:
+
+```sh
+docker ps --format "table {{ .ID}}\t{{.Names}}"
+```
+
+inside fabric-samples/test-network
+```sh
+tree docker
+```
+
+You can change the go language to javascript 
 The deployment CC - asset-transfer (basic) chaincode
 ```sh
-./network.sh deployCC -c channel1
+./network.sh deployCC -c channel1 -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
+
 ```
 
 docker ps returns an overview of all running containers.
@@ -299,6 +316,9 @@ docker-compose -f docker/docker-compose-test-net.yaml up -d
 #### Set environment variables for peer0 Org1
 https://hyperledger-fabric.readthedocs.io/en/release-2.2/test_network.html#interacting-with-the-network
 
+
+in test-network:
+
 vim org1.sh
 
 
@@ -313,14 +333,26 @@ export CORE_PEER_ADDRESS=localhost:7051
 ```
 
 ```sh
-source ./org1.sh
+source org1.sh
 ```
+
+
 
 Check env 
 
 ```sh
 printenv | grep CORE
+
+
 ```
+check local host of peer1
+
+```sh
+echo $CORE_PEER_ADDRESS
+```
+
+if you can read ```localhost:7051``` cont.
+
 
 After you have used the network.sh to create a channel, you can start a chaincode on the channel using the following command:
 
@@ -329,17 +361,22 @@ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.exa
 
 ```
 
+Now we can read from data using jq package 
+
+```sh
+sudo apt install jq
+```
 
 You can now query the ledger from your CLI. Run the following command to get the list of assets that were added to your channel ledger:
 
 ```sh
-peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}' 
+peer chaincode query -C $CHANNEL_NAME -n basic -c '{"Args":["GetAllAssets"]}' 
 
-peer chaincode query -C mychannel -n basic -c '{"Args":["ReadAsset","asset1"]}' 
+peer chaincode query -C $CHANNEL_NAME -n basic -c '{"Args":["ReadAsset","asset1"]}' 
 ```
 
 Create an asset 
 
 ```sh
-peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C $CHANNEL_NAME -n basic --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"function":"CreateAsset","Args":["asset","color","#","NAME",""]}'
+peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C $CHANNEL_NAME -n basic --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"function":"CreateAsset","Args":["asset8","color","#","NAME",""]}'
 ```
