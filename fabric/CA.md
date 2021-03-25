@@ -1,9 +1,13 @@
 
 Work with CA:
 
-create 
+ 
 ```sh
-./network.sh up  -ca
+./network.sh down
+```
+
+```sh
+./network.sh up createChannel -ca -c channel1
 ```
 
 Identity name,
