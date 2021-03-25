@@ -1,0 +1,7 @@
+# VSC
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+
+Host fabricLab
+    HostName IP
+    User system_username
+    IdentityFile /path/to/.ssh/private_key
