@@ -213,7 +213,11 @@ Add your user to the docker group.
 sudo usermod -a -G docker fabric
 ```
 
+Log into the user fabric
 
+```sh
+su fabric
+```
 
 ### Install simple network:
 https://hyperledger-fabric.readthedocs.io/en/release-2.2/install.html
