@@ -24,7 +24,7 @@ nproc
 Check your system Memory RAM: 
 
 ```sh
-free -h | awk '/^Mem/ {print $2}'
+free -h | awk '/^Mem/ {print $1 $2}'
 ```
 
 Check free disk space of the the home dir 
