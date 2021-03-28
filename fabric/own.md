@@ -27,4 +27,3 @@ configtxgen -profile ICOrgsOrdererGenesis -outputBlock ./channel-artifacts/genes
 change the configtx.yaml file.
 
 Add new Org3 into section Organizations 
-add new profiles: ThreeOrgsOrdererGenesis, ThreeOrgsChannel into section Profile.
