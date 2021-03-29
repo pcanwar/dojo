@@ -333,7 +333,7 @@ Copy ```docker/docker-compose-test-net.yaml``` file and rename ```docker-compose
 
 In ```docker-compose-net.yaml``` you need to add the orgs and change the network name to anyname you prefer.
 
-In the ```fabric-samples/work/docker``` run ``docker-compose up```
+In the ```fabric-samples/work/docker``` run ```docker-compose up```
 
 Your containers should run now...
 
