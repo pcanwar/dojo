@@ -80,7 +80,7 @@ You can add as many orgs as you want.
 Run the following command to generate the certification  
 
 ```sh
-cryptogen generate --config=./crypto-config.yaml # check out other flags such as --output
+cryptogen generate --config=./crypto-config.yaml --output organizations
 ```
 
 
