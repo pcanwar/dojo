@@ -84,7 +84,7 @@ After generating the certificate, you need to generate the orderer genesis block
 
 ### Generating an orderer genesis block:
 
-From the test-network copy ```configtx/``` dir into the ```work1``` dir. There is a ```configtx.yaml``` file that is used to create channel config. A channel configuration can be used to create the channel genesis block a channel or to create channel creation transaction for an application.
+From the test-network copy ```configtx/``` dir into the ```work``` dir. There is a ```configtx.yaml``` file that is used to create channel config. A channel configuration can be used to create the channel genesis block a channel or to create channel creation transaction for an application.
 
 In ```configtx.yaml``` file, you need to defined all organizations that belong to a channel in the Organizations section. In this file you need to specify each organization ```name```, ```ID```, ```MSPDir```, and ```AnchorPeers```. ```MSPDir``` generated output MSP directories.  ```AnchorPeers``` points to the peer node(host and port).
 
@@ -333,11 +333,12 @@ Copy ```docker/docker-compose-test-net.yaml``` file and rename ```docker-compose
 
 In ```docker-compose-net.yaml``` you need to add the orgs and change the network name to anyname you prefer.
 
-Start on a new terminal ```docker-compose up```
+In the ```fabric-samples/work/docker``` run ``docker-compose up```
 
 Your containers should run now...
 
 ### Create a channel
+On new a new terminal
 
 First you need to setup env for each of the org1, org2, and org3  
 
