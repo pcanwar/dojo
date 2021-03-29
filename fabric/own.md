@@ -340,7 +340,7 @@ Your containers should run now...
 ### Create a channel
 On new a new terminal
 
-First you need to setup env for each of the org1, org2, and org3  
+First you need to setup ```.sh``` or ```.env``` for each of the org1, org2, and org3  
 
 Second you need to create a channel then you need to join  org1, org2, org3 to the channel
 use: ```peer channel create ``` to create the channel, and  ```peer channel join```
